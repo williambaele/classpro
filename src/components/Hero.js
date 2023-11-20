@@ -44,7 +44,7 @@ const Hero = () => {
           >
             <a
               href="#"
-              className="block w-full rounded bg-[#DB4105] px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+              className="block w-full rounded bg-[#DB4105] px-12 py-3 text-sm font-medium text-white shadow hover:bg-[#DB4105]/90 focus:outline-none  sm:w-auto"
             >
               S'inscrire
             </a>
@@ -53,7 +53,7 @@ const Hero = () => {
               href="#"
               className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-[#DB4105] shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
             >
-              Learn More
+              Témoignages
             </a>
           </motion.div>
         </div>
