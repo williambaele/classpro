@@ -40,10 +40,9 @@ const Testimonials = () => {
     },
   ];
 
+  //RESTRICT TESTIMONIALS TO 3 ON INITIAL
   const [displayedTestimonials, setDisplayedTestimonials] = useState(3);
-
   const handleReadAllClick = () => {
-    // Set the number of displayed testimonials to the total number
     setDisplayedTestimonials(testimonials.length);
   };
 
@@ -156,7 +155,7 @@ const Testimonials = () => {
               </div>
 
               <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
-                &mdash; Michael Scott
+                &mdash; {item.author}
               </footer>
             </div>
           ))}

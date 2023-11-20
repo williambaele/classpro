@@ -1,4 +1,5 @@
 import Faq from "./components/Faq";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Lessons from "./components/Lessons";
@@ -14,6 +15,7 @@ function App() {
       <Numbers />
       <Testimonials />
       <Faq />
+      <Footer />
     </div>
   );
 }

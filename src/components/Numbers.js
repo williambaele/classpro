@@ -6,7 +6,7 @@ const Numbers = () => {
   const numbers = [
     {
       title: "Étudiants aidés",
-      number: 250,
+      number: 258,
     },
     {
       title: "Matières dispensées",
