@@ -31,7 +31,7 @@ const Faq = () => {
     },
   ];
   return (
-    <div className="space-y-4 mx-auto container py-20">
+    <div className="space-y-4 mx-auto container py-20 px-4 md:px-0">
       <h2 className="text-4xl text-large">Foire aux questions</h2>
       {questions.map((question, index) => (
         <div keu={index} onClick={() => setActiveQuestion(index)}>
