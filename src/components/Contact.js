@@ -41,7 +41,7 @@ const Contact = () => {
               <Link to={info.path}>
                 <div
                   key={index}
-                  className="shadow-xs rounded-md bg-white p-2 md:p-6 flex flex-col gap-2 md:gap-6 items-center  hover:bg-[#DB4105] hover:text-white cursor-pointer"
+                  className="shadow-md rounded-md bg-white p-2 md:p-6 flex flex-col gap-2 md:gap-6 items-center  hover:bg-[#DB4105] hover:text-white cursor-pointer"
                 >
                   {info.svg}
                   {info.name}
@@ -50,16 +50,16 @@ const Contact = () => {
             ))}
           </div>
 
-          <div className="rounded-lg bg-white p-8 shadow-lg  lg:p-12 md:col-span-2">
+          <div className="rounded-lg bg-white p-8 shadow-md lg:p-12 md:col-span-2">
             <form action="" className="space-y-4">
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                 <input
-                  className="w-full rounded-lg border-gray-200 p-3 text-sm border border-gray-200"
+                  className="w-full rounded-lg border-gray-200 p-3 text-sm border outline-none"
                   placeholder="Nom"
                   type="text"
                 />
                 <input
-                  className="w-full rounded-lg border-gray-200 p-3 text-sm border border-gray-200"
+                  className="w-full rounded-lg p-3 text-sm border border-gray-200 outline-none"
                   placeholder="Prénom"
                   type="text"
                 />
@@ -68,7 +68,7 @@ const Contact = () => {
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                 <div>
                   <input
-                    className="w-full rounded-lg border-gray-200 p-3 text-sm border border-gray-200"
+                    className="w-full rounded-lg border-gray-200 p-3 text-sm border border-gray-200 outline-none"
                     placeholder="Adresse email"
                     type="email"
                     id="email"
@@ -77,7 +77,7 @@ const Contact = () => {
 
                 <div>
                   <input
-                    className="w-full rounded-lg border-gray-200 p-3 text-sm border border-gray-200"
+                    className="w-full rounded-lg border-gray-200 p-3 text-sm border border-gray-200 outline-none"
                     placeholder="Numéro de téléphone"
                     type="tel"
                     id="phone"
@@ -129,7 +129,7 @@ const Contact = () => {
                 </label>
 
                 <textarea
-                  className="w-full rounded-lg border-gray-200 p-3 text-sm border border-gray-200"
+                  className="w-full rounded-lg border-gray-200 p-3 text-sm border border-gray-200 outline-none"
                   placeholder="Message"
                   rows="8"
                   id="message"
