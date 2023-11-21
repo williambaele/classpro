@@ -66,7 +66,7 @@ const Lessons = () => {
               href="#"
               className="mt-8 inline-block rounded bg-[#DB4105] px-12 py-3 text-sm font-medium text-white transition hover:bg-[#DB4105]/90 focus:outline-none focus:ring focus:ring-yellow-400"
             >
-              Get Started Today
+              Voir le contenu des cours
             </a>
           </div>
 

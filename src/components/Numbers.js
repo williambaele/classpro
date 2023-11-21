@@ -44,7 +44,7 @@ const Numbers = () => {
   return (
     <div className="bg-gray-50">
       <div className="mx-auto container px-4 md:px-0">
-        <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 md:py-16 lg:px-8">
+        <div className="py-12 md:py-16">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
               Méthodologie bien ficellée

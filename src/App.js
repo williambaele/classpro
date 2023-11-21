@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Lessons from "./components/Lessons";
 import Numbers from "./components/Numbers";
+import TabLessons from "./components/TabLessons";
 import Testimonials from "./components/Testimonials";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Lessons />
       <Numbers />
       <Testimonials />
+      <TabLessons />
       <Faq />
       <Footer />
     </div>
