@@ -22,7 +22,7 @@ const Hero = () => {
       style={backgroundImageStyle}
     >
       <div className="absolute inset-0 bg-white/65 sm:bg-transparent sm:from-white/25 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
-      <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex h-full lg:items-center lg:px-8 flex items-center">
+      <div className="container mx-auto relative mx-auto w-full px-4 md:px-0 py-32 lg:flex h-full lg:items-center flex items-center">
         <div className="w-full md:w-2/3 text-left">
           <h1 className="text-5xl text-white font-extrabold md:text-7xl">
             Développez votre

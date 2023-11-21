@@ -48,9 +48,9 @@ const Lessons = () => {
 
   return (
     <section className="mx-auto container px-4 md:px-0">
-      <div className="max-w-screen-xl py-8 sm:py-12 lg:py-24">
+      <div className="w-full py-8 sm:py-12 lg:py-24">
         <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16">
-          <div className="text-left h-full flex items-start flex-col justify-center ">
+          <div className="text-left h-full flex items-start flex-col justify-center w-full">
             <h2 className="text-3xl font-bold sm:text-4xl">
               Les cours dispensés
             </h2>

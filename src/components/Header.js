@@ -21,8 +21,8 @@ const Header = () => {
     },
   ];
   return (
-    <header class="bg-white border-b border-gray-200 shadow-sm">
-      <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 ">
+    <header class="bg-white border-b border-gray-200 shadow-sm sticky top-0 z-20">
+      <div class="mx-auto px-4 md:px-0 container mx-auto">
         <div class="flex h-16 items-center justify-between">
           <div class="flex-1 md:flex md:items-center md:gap-12 h-full">
             <div class="h-full">
