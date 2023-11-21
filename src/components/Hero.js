@@ -12,7 +12,6 @@ const Hero = () => {
   const controls = useAnimation();
 
   useEffect(() => {
-    // Start the animation when the component mounts
     controls.start({ x: 0 });
   }, [controls]);
 
@@ -44,7 +43,7 @@ const Hero = () => {
           >
             <a
               href="#"
-              className="block w-full rounded bg-[#DB4105] px-12 py-3 text-sm font-medium text-white shadow hover:bg-[#DB4105]/90 focus:outline-none  sm:w-auto"
+              className="block w-full rounded bg-[#DB4105] px-12 py-3 text-sm font-medium text-white shadow hover:bg-white hover:text-[#DB4105] hover:border-[#DB4105]   sm:w-auto border-[#DB4105]"
             >
               S'inscrire
             </a>

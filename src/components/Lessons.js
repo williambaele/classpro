@@ -64,7 +64,7 @@ const Lessons = () => {
 
             <a
               href="#"
-              className="mt-8 inline-block rounded bg-[#DB4105] px-12 py-3 text-sm font-medium text-white transition hover:bg-[#DB4105]/90 focus:outline-none focus:ring focus:ring-yellow-400"
+              className="mt-8 inline-block rounded bg-[#DB4105] px-12 py-3 text-sm font-medium text-white transition hover:bg-white hover:text-[#DB4105] hover:border-[#DB4105] hover:border"
             >
               Voir le contenu des cours
             </a>

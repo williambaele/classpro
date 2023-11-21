@@ -32,7 +32,9 @@ const Faq = () => {
   ];
   return (
     <div className="space-y-4 mx-auto container py-20 px-4 md:px-0">
-      <h2 className="text-4xl text-large">Foire aux questions</h2>
+      <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
+        Questions fréquement posées
+      </h2>
       {questions.map((question, index) => (
         <div keu={index} onClick={() => setActiveQuestion(index)}>
           <div className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-100 p-4 text-gray-900 delay-400	transition-transform	ease-in-out	">

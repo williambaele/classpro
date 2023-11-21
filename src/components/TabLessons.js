@@ -1,30 +1,48 @@
 import React, { useState } from "react";
 
 const TabLessons = () => {
-  const titles = [
+  const lessons = [
     {
       name: "Math",
       svg: "",
+      content:
+        "Quisque bibendum elit malesuada risus pulvinar, non scelerisque ligula viverra. Suspendisse sit amet tellus eget urna placerat porta. Nam accumsan, dui sit amet mollis egestas, est sapien pretium nulla, vitae eleifend elit lectus at est. Quisque nec efficitur odio. Pellentesque et nunc ut dolor mollis sodales sed ut metus. Etiam convallis elementum diam quis imperdiet. Maecenas tincidunt sem quis neque gravida blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.",
+      chapters: ["Chapitre 1", "Chapitre 2", "Chapitre 3", "Chapitre 4"],
     },
     {
       name: "Sciences",
       svg: "",
+      content:
+        "Quisque bibendum elit malesuada risus pulvinar, non scelerisque ligula viverra. Suspendisse sit amet tellus eget urna placerat porta. Nam accumsan, dui sit amet mollis egestas, est sapien pretium nulla, vitae eleifend elit lectus at est. Quisque nec efficitur odio. Pellentesque et nunc ut dolor mollis sodales sed ut metus. Etiam convallis elementum diam quis imperdiet. Maecenas tincidunt sem quis neque gravida blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.",
+      chapters: ["Chapitre 1", "Chapitre 2", "Chapitre 3", "Chapitre 4"],
     },
     {
       name: "Histoire",
       svg: "",
+      content:
+        "Quisque bibendum elit malesuada risus pulvinar, non scelerisque ligula viverra. Suspendisse sit amet tellus eget urna placerat porta. Nam accumsan, dui sit amet mollis egestas, est sapien pretium nulla, vitae eleifend elit lectus at est. Quisque nec efficitur odio. Pellentesque et nunc ut dolor mollis sodales sed ut metus. Etiam convallis elementum diam quis imperdiet. Maecenas tincidunt sem quis neque gravida blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.",
+      chapters: ["Chapitre 1", "Chapitre 2", "Chapitre 3", "Chapitre 4"],
     },
     {
       name: "Géographie",
       svg: "",
+      content:
+        "Quisque bibendum elit malesuada risus pulvinar, non scelerisque ligula viverra. Suspendisse sit amet tellus eget urna placerat porta. Nam accumsan, dui sit amet mollis egestas, est sapien pretium nulla, vitae eleifend elit lectus at est. Quisque nec efficitur odio. Pellentesque et nunc ut dolor mollis sodales sed ut metus. Etiam convallis elementum diam quis imperdiet. Maecenas tincidunt sem quis neque gravida blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.",
+      chapters: ["Chapitre 1", "Chapitre 2", "Chapitre 3", "Chapitre 4"],
     },
     {
       name: "Françcais",
       svg: "",
+      content:
+        "Quisque bibendum elit malesuada risus pulvinar, non scelerisque ligula viverra. Suspendisse sit amet tellus eget urna placerat porta. Nam accumsan, dui sit amet mollis egestas, est sapien pretium nulla, vitae eleifend elit lectus at est. Quisque nec efficitur odio. Pellentesque et nunc ut dolor mollis sodales sed ut metus. Etiam convallis elementum diam quis imperdiet. Maecenas tincidunt sem quis neque gravida blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.",
+      chapters: ["Chapitre 1", "Chapitre 2", "Chapitre 3", "Chapitre 4"],
     },
     {
       name: "Option",
       svg: "",
+      content:
+        "Quisque bibendum elit malesuada risus pulvinar, non scelerisque ligula viverra. Suspendisse sit amet tellus eget urna placerat porta. Nam accumsan, dui sit amet mollis egestas, est sapien pretium nulla, vitae eleifend elit lectus at est. Quisque nec efficitur odio. Pellentesque et nunc ut dolor mollis sodales sed ut metus. Etiam convallis elementum diam quis imperdiet. Maecenas tincidunt sem quis neque gravida blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.",
+      chapters: ["Chapitre 1", "Chapitre 2", "Chapitre 3", "Chapitre 4"],
     },
   ];
 
@@ -32,18 +50,20 @@ const TabLessons = () => {
   return (
     <div className="container mx-auto px-4 md:px-0 flex flex-col space-y-6">
       <div className="flex flex-col space-y-4">
-        <h2 className="text-3xl">
-          Découvrez le contenu de nos cours préparatoires
+        <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
+          Contenu des cours
         </h2>
         <p className="text-lg">
-          This is some placeholder content the Profile tab's associated content,
-          clicking another tab will toggle the visibility of this one for the
-          next.
+          Quisque bibendum elit malesuada risus pulvinar, non scelerisque ligula
+          viverra. Suspendisse sit amet tellus eget urna placerat porta. Nam
+          accumsan, dui sit amet mollis egestas, est sapien pretium nulla, vitae
+          eleifend elit lectus at est. Quisque nec efficitur odio. Pellentesque
+          et nunc ut dolor mollis sodales sed ut metus.
         </p>
       </div>
-      <div className="md:flex  gap-4">
-        <ul className="flex md:block space-y space-y-4 justify-around text-sm font-medium text-gray-500 mb-4  items-end">
-          {titles.map((title, index) => (
+      <div className="md:flex  gap-6">
+        <ul className="flex md:block space-y space-y-4 justify-around text-sm font-medium text-gray-500 mb-4 items-end">
+          {lessons.map((title, index) => (
             <li key={index} onClick={() => setActiveTab(index)}>
               <div
                 className={`inline-flex items-center px-2 md:px-4 py-3 rounded-md cursor-pointer w-full ${
@@ -67,19 +87,26 @@ const TabLessons = () => {
             </li>
           ))}
         </ul>
-        <div className="p-6 bg-gray-100 text-medium text-gray-500 rounded-lg w-full">
-          <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">
-            Profile Tab
-          </h3>
-          <p className="mb-2">
-            This is some placeholder content the Profile tab's associated
-            content, clicking another tab will toggle the visibility of this one
-            for the next.
-          </p>
-          <p>
-            The tab JavaScript swaps classes to control the content visibility
-            and styling.
-          </p>
+        <div className="p-6 bg-gray-100 text-medium text-gray-500 rounded-lg w-full flex flex-col justify-between space-y-4 md:space-y-0">
+          <div className="flex flex-col">
+            <h3 className="text-xl font-bold text-gray-900  mb-2">
+              Cours de {lessons[activeTab].name}
+            </h3>
+            <p className="mb-2">{lessons[activeTab].content}</p>
+            <div className="flex flex-col space-y-2">
+              <h3 className="text-lg text-gray-800">Contenu du cours</h3>
+              <ul className="list-disc  list-inside">
+                {lessons[activeTab].chapters.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <div className="flex justify-start md:justify-end">
+            <button className="bg-[#DB4105] text-white text-sm p-2 rounded-md">
+              Télécharger la brochure
+            </button>
+          </div>
         </div>
       </div>
     </div>

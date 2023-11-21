@@ -5,37 +5,37 @@ const Testimonials = () => {
     {
       title: "Super prof",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur praesentium natus sapiente commodi. Aliquid sunt tempore iste repellendus explicabo dignissimos placeat, autem harum dolore reprehenderit quis! Quo totam dignissimos earum.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis vehicula erat sed lobortis. Nulla tristique scelerisque enim sit amet facilisis.",
       author: "John Doe",
     },
     {
       title: "Super prof",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur praesentium natus sapiente commodi. Aliquid sunt tempore iste repellendus explicabo dignissimos placeat, autem harum dolore reprehenderit quis! Quo totam dignissimos earum.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis vehicula erat sed lobortis. Nulla tristique scelerisque enim sit amet facilisis.",
       author: "John Doe",
     },
     {
       title: "Super prof",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur praesentium natus sapiente commodi. Aliquid sunt tempore iste repellendus explicabo dignissimos placeat, autem harum dolore reprehenderit quis! Quo totam dignissimos earum.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis vehicula erat sed lobortis. Nulla tristique scelerisque enim sit amet facilisis.",
       author: "John Doe",
     },
     {
       title: "Super prof",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur praesentium natus sapiente commodi. Aliquid sunt tempore iste repellendus explicabo dignissimos placeat, autem harum dolore reprehenderit quis! Quo totam dignissimos earum.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis vehicula erat sed lobortis. Nulla tristique scelerisque enim sit amet facilisis.",
       author: "John Doe",
     },
     {
       title: "Super prof",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur praesentium natus sapiente commodi. Aliquid sunt tempore iste repellendus explicabo dignissimos placeat, autem harum dolore reprehenderit quis! Quo totam dignissimos earum.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis vehicula erat sed lobortis. Nulla tristique scelerisque enim sit amet facilisis.",
       author: "John Doe",
     },
     {
       title: "Super prof",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur praesentium natus sapiente commodi. Aliquid sunt tempore iste repellendus explicabo dignissimos placeat, autem harum dolore reprehenderit quis! Quo totam dignissimos earum.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit.Morbi sagittis vehicula erat sed lobortis. Nulla tristique scelerisque enim sit amet facilisis.",
       author: "John Doe",
     },
   ];
@@ -51,7 +51,7 @@ const Testimonials = () => {
       <div class="py-12  lg:py-16">
         <div class="md:flex md:items-end md:justify-between">
           <div class="max-w-xl">
-            <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+            <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
               Nos anciens élèves témoignent
             </h2>
 
@@ -146,10 +146,7 @@ const Testimonials = () => {
                   </p>
 
                   <p class="mt-4 leading-relaxed text-gray-700">
-                    No, Rose, they are not breathing. And they have no arms or
-                    legs … Where are they? You know what? If we come across
-                    somebody with no arms or legs, do we bother resuscitating
-                    them? I mean, what quality of life do we have there?
+                    {item.content}
                   </p>
                 </div>
               </div>
