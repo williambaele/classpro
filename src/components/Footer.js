@@ -7,11 +7,11 @@ const Footer = () => {
       <div class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
         <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
-            <div class="w-1/2">
+            <div class="w-1/3 md:w-1:2">
               <img src={Logo} className="object-contain h-full" alt="Logo" />
             </div>
 
-            <p class="mt-4 max-w-xs text-gray-500">
+            <p class="mt-4 w-full text-gray-500">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse non
               cupiditate quae nam molestias.
             </p>
@@ -253,7 +253,7 @@ const Footer = () => {
         </div>
 
         <p class="text-xs text-gray-500">
-          &copy; 2022. Company Name. All rights reserved.
+          &copy; 2023. Template développé par William Baele
         </p>
       </div>
     </footer>

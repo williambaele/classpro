@@ -42,14 +42,14 @@ const Hero = () => {
             transition={{ type: "spring", stiffness: 100 }}
           >
             <a
-              href="#"
+              href="#contact"
               className="block w-full rounded bg-[#DB4105] px-12 py-3 text-sm font-medium text-white shadow hover:bg-white hover:text-[#DB4105] hover:border-[#DB4105]   sm:w-auto border-[#DB4105]"
             >
               S'inscrire
             </a>
 
             <a
-              href="#"
+              href="#temoignages"
               className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-[#DB4105] shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
             >
               Témoignages

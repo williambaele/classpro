@@ -63,7 +63,7 @@ const Lessons = () => {
             </p>
 
             <a
-              href="#"
+              href="#contenu"
               className="mt-8 inline-block rounded bg-[#DB4105] px-12 py-3 text-sm font-medium text-white transition hover:bg-white hover:text-[#DB4105] hover:border-[#DB4105] hover:border"
             >
               Voir le contenu des cours

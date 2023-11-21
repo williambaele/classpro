@@ -1,45 +1,40 @@
 import React, { useState } from "react";
+import { FaRegFileAlt } from "react-icons/fa";
 
 const TabLessons = () => {
   const lessons = [
     {
       name: "Math",
-      svg: "",
       content:
         "Quisque bibendum elit malesuada risus pulvinar, non scelerisque ligula viverra. Suspendisse sit amet tellus eget urna placerat porta. Nam accumsan, dui sit amet mollis egestas, est sapien pretium nulla, vitae eleifend elit lectus at est. Quisque nec efficitur odio. Pellentesque et nunc ut dolor mollis sodales sed ut metus. Etiam convallis elementum diam quis imperdiet. Maecenas tincidunt sem quis neque gravida blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.",
       chapters: ["Chapitre 1", "Chapitre 2", "Chapitre 3", "Chapitre 4"],
     },
     {
       name: "Sciences",
-      svg: "",
       content:
         "Quisque bibendum elit malesuada risus pulvinar, non scelerisque ligula viverra. Suspendisse sit amet tellus eget urna placerat porta. Nam accumsan, dui sit amet mollis egestas, est sapien pretium nulla, vitae eleifend elit lectus at est. Quisque nec efficitur odio. Pellentesque et nunc ut dolor mollis sodales sed ut metus. Etiam convallis elementum diam quis imperdiet. Maecenas tincidunt sem quis neque gravida blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.",
       chapters: ["Chapitre 1", "Chapitre 2", "Chapitre 3", "Chapitre 4"],
     },
     {
       name: "Histoire",
-      svg: "",
       content:
         "Quisque bibendum elit malesuada risus pulvinar, non scelerisque ligula viverra. Suspendisse sit amet tellus eget urna placerat porta. Nam accumsan, dui sit amet mollis egestas, est sapien pretium nulla, vitae eleifend elit lectus at est. Quisque nec efficitur odio. Pellentesque et nunc ut dolor mollis sodales sed ut metus. Etiam convallis elementum diam quis imperdiet. Maecenas tincidunt sem quis neque gravida blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.",
       chapters: ["Chapitre 1", "Chapitre 2", "Chapitre 3", "Chapitre 4"],
     },
     {
       name: "Géographie",
-      svg: "",
       content:
         "Quisque bibendum elit malesuada risus pulvinar, non scelerisque ligula viverra. Suspendisse sit amet tellus eget urna placerat porta. Nam accumsan, dui sit amet mollis egestas, est sapien pretium nulla, vitae eleifend elit lectus at est. Quisque nec efficitur odio. Pellentesque et nunc ut dolor mollis sodales sed ut metus. Etiam convallis elementum diam quis imperdiet. Maecenas tincidunt sem quis neque gravida blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.",
       chapters: ["Chapitre 1", "Chapitre 2", "Chapitre 3", "Chapitre 4"],
     },
     {
       name: "Françcais",
-      svg: "",
       content:
         "Quisque bibendum elit malesuada risus pulvinar, non scelerisque ligula viverra. Suspendisse sit amet tellus eget urna placerat porta. Nam accumsan, dui sit amet mollis egestas, est sapien pretium nulla, vitae eleifend elit lectus at est. Quisque nec efficitur odio. Pellentesque et nunc ut dolor mollis sodales sed ut metus. Etiam convallis elementum diam quis imperdiet. Maecenas tincidunt sem quis neque gravida blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.",
       chapters: ["Chapitre 1", "Chapitre 2", "Chapitre 3", "Chapitre 4"],
     },
     {
       name: "Option",
-      svg: "",
       content:
         "Quisque bibendum elit malesuada risus pulvinar, non scelerisque ligula viverra. Suspendisse sit amet tellus eget urna placerat porta. Nam accumsan, dui sit amet mollis egestas, est sapien pretium nulla, vitae eleifend elit lectus at est. Quisque nec efficitur odio. Pellentesque et nunc ut dolor mollis sodales sed ut metus. Etiam convallis elementum diam quis imperdiet. Maecenas tincidunt sem quis neque gravida blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.",
       chapters: ["Chapitre 1", "Chapitre 2", "Chapitre 3", "Chapitre 4"],
@@ -48,7 +43,10 @@ const TabLessons = () => {
 
   const [activeTab, setActiveTab] = useState(0);
   return (
-    <div className="container mx-auto px-4 md:px-0 flex flex-col space-y-6">
+    <div
+      className="container mx-auto px-4 md:px-0 flex flex-col space-y-6 py-16"
+      id="contenu"
+    >
       <div className="flex flex-col space-y-4">
         <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
           Contenu des cours
@@ -62,11 +60,11 @@ const TabLessons = () => {
         </p>
       </div>
       <div className="md:flex  gap-6">
-        <ul className="flex md:block space-y space-y-4 justify-around text-sm font-medium text-gray-500 mb-4 items-end">
+        <ul className="grid grid-cols-6 gap-2 md:block space-y space-y-4 justify-around text-sm font-medium text-gray-500 mb-4 items-end">
           {lessons.map((title, index) => (
             <li key={index} onClick={() => setActiveTab(index)}>
               <div
-                className={`inline-flex items-center px-2 md:px-4 py-3 rounded-md cursor-pointer w-full ${
+                className={`inline-flex justify-center md:justify-start items-center px-2 md:px-4 py-3 rounded-md cursor-pointer w-full ${
                   activeTab === index
                     ? "bg-[#DB4105] text-white font-bold"
                     : "bg-gray-100"
@@ -103,7 +101,8 @@ const TabLessons = () => {
             </div>
           </div>
           <div className="flex justify-start md:justify-end">
-            <button className="bg-[#DB4105] text-white text-sm p-2 rounded-md">
+            <button className="bg-[#DB4105] hover:bg-[#DB4105]/90 text-white text-sm p-2 rounded-md flex items-center gap-2">
+              <FaRegFileAlt />
               Télécharger la brochure
             </button>
           </div>

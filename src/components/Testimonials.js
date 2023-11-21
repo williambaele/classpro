@@ -47,8 +47,8 @@ const Testimonials = () => {
   };
 
   return (
-    <section class="mx-auto container px-4 md:px-0">
-      <div class="py-12  lg:py-16">
+    <section class="mx-auto container px-4 md:px-0" id="temoignages">
+      <div class="py-16">
         <div class="md:flex md:items-end md:justify-between">
           <div class="max-w-xl">
             <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
@@ -64,11 +64,10 @@ const Testimonials = () => {
           </div>
 
           <button
-            href="#"
             onClick={handleReadAllClick}
-            class="mt-6 inline-flex shrink-0 items-center gap-2 rounded-full border border-[#DB4105] px-5 py-3 text-[#DB4105] transition hover:bg-[#DB4105] hover:text-white md:mt-0"
+            class="mt-6 inline-flex shrink-0 items-center gap-2 rounded-md border border-[#DB4105] px-5 py-3 text-[#DB4105] transition hover:bg-[#DB4105] hover:text-white md:mt-0"
           >
-            <span class="font-medium"> Read all reviews </span>
+            <span class="font-medium"> Voir tous les témoignages </span>
 
             <svg
               xmlns="http://www.w3.org/2000/svg"

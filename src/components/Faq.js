@@ -31,7 +31,7 @@ const Faq = () => {
     },
   ];
   return (
-    <div className="space-y-4 mx-auto container py-20 px-4 md:px-0">
+    <div className="space-y-4 mx-auto container py-20 px-4 md:px-0" id="faq">
       <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
         Questions fréquement posées
       </h2>
