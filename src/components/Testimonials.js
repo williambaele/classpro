@@ -40,7 +40,7 @@ const Testimonials = () => {
     },
   ];
 
-  //RESTRICT TESTIMONIALS TO 3 ON INITIAL
+  //RESTRICT TESTIMONIALS TO 3 ITEMS ON INITIAL
   const [displayedTestimonials, setDisplayedTestimonials] = useState(3);
   const handleReadAllClick = () => {
     setDisplayedTestimonials(testimonials.length);
@@ -52,7 +52,7 @@ const Testimonials = () => {
         <div class="md:flex md:items-end md:justify-between">
           <div class="max-w-xl">
             <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-              Read trusted reviews from our customers
+              Nos anciens élèves témoignent
             </h2>
 
             <p class="mt-6 w-full leading-relaxed text-gray-700">
