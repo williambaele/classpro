@@ -27,7 +27,7 @@ const Contact = () => {
         <h2 className=" text-3xl font-bold text-gray-900 sm:text-4xl">
           Inscrivez-vous et passez votre jury central
         </h2>
-        <p>
+        <p className="w-full md:w-2/3 mx-auto">
           Quisque bibendum elit malesuada risus pulvinar, non scelerisque ligula
           viverra. Suspendisse sit amet tellus eget urna placerat porta. Nam
           accumsan, dui sit amet mollis egestas, est sapien pretium nulla, vitae

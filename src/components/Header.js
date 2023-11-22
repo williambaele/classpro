@@ -52,7 +52,7 @@ const Header = () => {
             <div className="flex items-center gap-4">
               <div className="sm:flex sm:gap-4">
                 <a
-                  className="rounded-md bg-[#DB4105] px-5 py-2.5 text-sm font-medium text-white shadow"
+                  className="rounded bg-[#DB4105] px-5 py-2.5 text-sm font-medium text-white shadow"
                   href="/#contact"
                 >
                   S'inscrire

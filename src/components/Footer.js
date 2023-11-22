@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../assets/images/logo.png";
-import { CiMail } from "react-icons/ci";
+import { FaEnvelope } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa6";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
@@ -142,7 +142,7 @@ const Footer = () => {
                     href="mailto:prepamed@classpro.be"
                     class="text-gray-700 transition hover:opacity-75 flex gap-2 items-center"
                   >
-                    <CiMail />
+                    <FaEnvelope />
                     prepamed@classpro.be
                   </a>
                 </li>

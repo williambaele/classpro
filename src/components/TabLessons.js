@@ -72,7 +72,7 @@ const TabLessons = () => {
         </p>
       </div>
       <div className="md:flex gap-6">
-        <ul className="grid grid-cols-3 gap-2 md:block space-y md:space-y-4 justify-around text-sm font-medium text-gray-500 mb-4 items-end">
+        <ul className="grid grid-cols-3 md:flex-grow gap-2 md:flex md:justify-between md:flex-col text-sm font-medium text-gray-500 mb-4 md:mb-0">
           {lessons.map((title, index) => (
             <li key={index} onClick={() => setActiveTab(index)}>
               <div

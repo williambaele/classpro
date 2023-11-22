@@ -62,13 +62,13 @@ const Numbers = () => {
               {numbers.map((number, index) => (
                 <div
                   key={index}
-                  className="flex flex-col rounded-lg bg-white shadow-sm px-4 py-8 text-center hover:scale-105"
+                  className="flex flex-col rounded-lg bg-white shadow-sm px-4 py-2 md:py-6 text-center hover:scale-105"
                 >
-                  <dt className="order-last text-lg font-medium text-gray-500">
+                  <p className="order-last text-lg font-medium text-gray-500">
                     {number.title}
-                  </dt>
+                  </p>
 
-                  <dd className="text-4xl font-extrabold text-[#DB4105] md:text-5xl">
+                  <dd className="text-2xl font-extrabold text-[#DB4105] md:text-4xl">
                     <AnimatedNumber value={number.number} />
                   </dd>
                 </div>

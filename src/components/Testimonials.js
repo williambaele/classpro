@@ -47,8 +47,8 @@ const Testimonials = () => {
   };
 
   return (
-    <section class="mx-auto container px-4 md:px-0" id="temoignages">
-      <div class="py-16">
+    <div class="bg-gray-100" id="temoignages">
+      <div class="py-16 mx-auto container px-4 md:px-0">
         <div class="md:flex md:items-end md:justify-between">
           <div class="max-w-xl">
             <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
@@ -65,7 +65,7 @@ const Testimonials = () => {
 
           <button
             onClick={handleReadAllClick}
-            class="mt-6 inline-flex shrink-0 items-center gap-2 rounded-md border border-[#DB4105] px-5 py-3 text-[#DB4105] transition hover:bg-[#DB4105] hover:text-white md:mt-0"
+            class="mt-6 rounded bg-[#DB4105] px-12 py-3 text-sm font-medium text-white transition hover:bg-white hover:text-[#DB4105] hover:border-[#DB4105] hover:border flex items-center gap-2"
           >
             <span class="font-medium"> Voir tous les témoignages </span>
 
@@ -89,7 +89,7 @@ const Testimonials = () => {
           {testimonials.slice(0, displayedTestimonials).map((item, index) => (
             <div
               key={index}
-              className="bg-gray-100 flex h-full flex-col justify-between p-6 shadow-sm sm:p-8 rounded-md hover:bg-white hover:border"
+              className="bg-white shadow-sm flex h-full flex-col justify-between p-6 shadow-sm sm:p-8 rounded-md hover:bg-white hover:border"
             >
               <div>
                 <div class="flex gap-0.5 text-green-500">
@@ -157,7 +157,7 @@ const Testimonials = () => {
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
