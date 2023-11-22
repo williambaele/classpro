@@ -47,7 +47,7 @@ const Numbers = () => {
         <div className="py-12 md:py-16">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
-              Méthodologie bien ficellée
+              Une méthodologie bien ficellée
             </h2>
 
             <p className="mt-4 text-gray-500 sm:text-xl">

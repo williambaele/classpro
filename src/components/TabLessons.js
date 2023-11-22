@@ -1,5 +1,11 @@
 import React, { useState } from "react";
 import { FaRegFileAlt } from "react-icons/fa";
+import { BiMath } from "react-icons/bi";
+import { GiPublicSpeaker } from "react-icons/gi";
+import { IoEarthOutline } from "react-icons/io5";
+import { GiMaterialsScience } from "react-icons/gi";
+import { LuBookMarked } from "react-icons/lu";
+import { PiStudent } from "react-icons/pi";
 
 const TabLessons = () => {
   const lessons = [
@@ -8,36 +14,42 @@ const TabLessons = () => {
       content:
         "Quisque bibendum elit malesuada risus pulvinar, non scelerisque ligula viverra. Suspendisse sit amet tellus eget urna placerat porta. Nam accumsan, dui sit amet mollis egestas, est sapien pretium nulla, vitae eleifend elit lectus at est. Quisque nec efficitur odio. Pellentesque et nunc ut dolor mollis sodales sed ut metus. Etiam convallis elementum diam quis imperdiet. Maecenas tincidunt sem quis neque gravida blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.",
       chapters: ["Chapitre 1", "Chapitre 2", "Chapitre 3", "Chapitre 4"],
+      svg: <BiMath />,
     },
     {
       name: "Sciences",
       content:
         "Quisque bibendum elit malesuada risus pulvinar, non scelerisque ligula viverra. Suspendisse sit amet tellus eget urna placerat porta. Nam accumsan, dui sit amet mollis egestas, est sapien pretium nulla, vitae eleifend elit lectus at est. Quisque nec efficitur odio. Pellentesque et nunc ut dolor mollis sodales sed ut metus. Etiam convallis elementum diam quis imperdiet. Maecenas tincidunt sem quis neque gravida blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.",
       chapters: ["Chapitre 1", "Chapitre 2", "Chapitre 3", "Chapitre 4"],
+      svg: <GiMaterialsScience />,
     },
     {
       name: "Histoire",
       content:
         "Quisque bibendum elit malesuada risus pulvinar, non scelerisque ligula viverra. Suspendisse sit amet tellus eget urna placerat porta. Nam accumsan, dui sit amet mollis egestas, est sapien pretium nulla, vitae eleifend elit lectus at est. Quisque nec efficitur odio. Pellentesque et nunc ut dolor mollis sodales sed ut metus. Etiam convallis elementum diam quis imperdiet. Maecenas tincidunt sem quis neque gravida blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.",
       chapters: ["Chapitre 1", "Chapitre 2", "Chapitre 3", "Chapitre 4"],
+      svg: <LuBookMarked />,
     },
     {
       name: "Géographie",
       content:
         "Quisque bibendum elit malesuada risus pulvinar, non scelerisque ligula viverra. Suspendisse sit amet tellus eget urna placerat porta. Nam accumsan, dui sit amet mollis egestas, est sapien pretium nulla, vitae eleifend elit lectus at est. Quisque nec efficitur odio. Pellentesque et nunc ut dolor mollis sodales sed ut metus. Etiam convallis elementum diam quis imperdiet. Maecenas tincidunt sem quis neque gravida blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.",
       chapters: ["Chapitre 1", "Chapitre 2", "Chapitre 3", "Chapitre 4"],
+      svg: <IoEarthOutline />,
     },
     {
-      name: "Françcais",
+      name: "Français",
       content:
         "Quisque bibendum elit malesuada risus pulvinar, non scelerisque ligula viverra. Suspendisse sit amet tellus eget urna placerat porta. Nam accumsan, dui sit amet mollis egestas, est sapien pretium nulla, vitae eleifend elit lectus at est. Quisque nec efficitur odio. Pellentesque et nunc ut dolor mollis sodales sed ut metus. Etiam convallis elementum diam quis imperdiet. Maecenas tincidunt sem quis neque gravida blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.",
       chapters: ["Chapitre 1", "Chapitre 2", "Chapitre 3", "Chapitre 4"],
+      svg: <GiPublicSpeaker />,
     },
     {
       name: "Option",
       content:
         "Quisque bibendum elit malesuada risus pulvinar, non scelerisque ligula viverra. Suspendisse sit amet tellus eget urna placerat porta. Nam accumsan, dui sit amet mollis egestas, est sapien pretium nulla, vitae eleifend elit lectus at est. Quisque nec efficitur odio. Pellentesque et nunc ut dolor mollis sodales sed ut metus. Etiam convallis elementum diam quis imperdiet. Maecenas tincidunt sem quis neque gravida blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.",
       chapters: ["Chapitre 1", "Chapitre 2", "Chapitre 3", "Chapitre 4"],
+      svg: <PiStudent style={{ fontSize: "24px" }} />,
     },
   ];
 
@@ -59,27 +71,19 @@ const TabLessons = () => {
           et nunc ut dolor mollis sodales sed ut metus.
         </p>
       </div>
-      <div className="md:flex  gap-6">
-        <ul className="grid grid-cols-3 gap-2 md:block space-y space-y-4 justify-around text-sm font-medium text-gray-500 mb-4 items-end">
+      <div className="md:flex gap-6">
+        <ul className="grid grid-cols-3 gap-2 md:block space-y md:space-y-4 justify-around text-sm font-medium text-gray-500 mb-4 items-end">
           {lessons.map((title, index) => (
             <li key={index} onClick={() => setActiveTab(index)}>
               <div
-                className={`inline-flex justify-center md:justify-start items-center px-2 md:px-4 py-3 rounded-md cursor-pointer w-full ${
+                className={`inline-flex justify-center md:justify-start gap-2  items-center px-2 md:px-4 py-3 rounded-md cursor-pointer w-full ${
                   activeTab === index
                     ? "bg-[#DB4105] text-white font-bold"
                     : "bg-gray-100"
                 }`}
                 aria-current="page"
               >
-                <svg
-                  className="w-4 h-4 me-2 text-white hidden md:block"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z" />
-                </svg>
+                {title.svg}
                 {title.name}
               </div>
             </li>
