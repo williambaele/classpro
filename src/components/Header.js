@@ -27,10 +27,8 @@ const Header = () => {
     <header className="bg-white border-b border-gray-200 shadow-sm sticky top-0 z-20">
       <div className="mx-auto px-4 md:px-0 container mx-auto">
         <div className="flex h-16 items-center justify-between">
-          <div className="flex-1 md:flex md:items-center md:gap-12 h-full">
-            <a className="h-full" href="/">
-              <img src={Logo} className="object-cover h-full" alt="Logo" />
-            </a>
+          <div className="md:flex md:items-center md:gap-12 h-full w-1/3 md:w-full">
+            <img src={Logo} className="object-contain h-full" alt="Logo" />
           </div>
 
           <div className="md:flex md:items-center md:gap-12">

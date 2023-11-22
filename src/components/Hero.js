@@ -26,7 +26,7 @@ const Hero = () => {
           <h1 className="text-5xl text-white font-extrabold md:text-7xl">
             Développez votre
             <strong className="block font-extrabold text-[#DB4105]">
-              plein potentiel.
+              plein potentiel
             </strong>
           </h1>
 

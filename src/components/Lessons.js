@@ -13,32 +13,32 @@ const Lessons = () => {
     {
       name: "Sciences",
       content: "Lorem ipsum dolor sit amet consectetur.",
-      svg: <GiMaterialsScience style={{ fontSize: "20px" }} />,
+      svg: <GiMaterialsScience style={{ fontSize: "26px" }} />,
     },
     {
       name: "Mathématiques",
       content: "Lorem ipsum dolor sit amet consectetur.",
-      svg: <BiMath style={{ fontSize: "20px" }} />,
+      svg: <BiMath style={{ fontSize: "26px" }} />,
     },
     {
       name: "Français",
       content: "Lorem ipsum dolor sit amet consectetur.",
-      svg: <GiPublicSpeaker style={{ fontSize: "20px" }} />,
+      svg: <GiPublicSpeaker style={{ fontSize: "26px" }} />,
     },
     {
       name: "Géographie",
       content: "Lorem ipsum dolor sit amet consectetur.",
-      svg: <IoEarthOutline style={{ fontSize: "20px" }} />,
+      svg: <IoEarthOutline style={{ fontSize: "26px" }} />,
     },
     {
       name: "Histoire",
       content: "Lorem ipsum dolor sit amet consectetur.",
-      svg: <LuBookMarked style={{ fontSize: "20px" }} />,
+      svg: <LuBookMarked style={{ fontSize: "26px" }} />,
     },
     {
       name: "Option",
       content: "Lorem ipsum dolor sit amet consectetur.",
-      svg: <PiStudent style={{ fontSize: "20px" }} />,
+      svg: <PiStudent style={{ fontSize: "26px" }} />,
     },
   ];
 

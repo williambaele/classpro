@@ -7,10 +7,10 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer class="bg-white border-t border-gray-200">
-      <div class="mx-auto container space-y-8 px-4 md:px-0 py-16">
+      <div class="mx-auto container space-y-8 px-4 md:px-0 py-10 md:py-16">
         <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
-            <div class="w-1/3 md:w-1:2">
+            <div class="w-1/3 h-20">
               <img src={Logo} className="object-contain h-full" alt="Logo" />
             </div>
 
