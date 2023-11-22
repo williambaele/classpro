@@ -1,38 +1,44 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { BiMath } from "react-icons/bi";
+import { GiPublicSpeaker } from "react-icons/gi";
+import { IoEarthOutline } from "react-icons/io5";
+import { GiMaterialsScience } from "react-icons/gi";
+import { LuBookMarked } from "react-icons/lu";
+import { PiStudent } from "react-icons/pi";
 
 const Lessons = () => {
   const lessons = [
     {
       name: "Sciences",
       content: "Lorem ipsum dolor sit amet consectetur.",
-      svg: "",
+      svg: <GiMaterialsScience style={{ fontSize: "20px" }} />,
     },
     {
       name: "Mathématiques",
       content: "Lorem ipsum dolor sit amet consectetur.",
-      svg: "",
+      svg: <BiMath style={{ fontSize: "20px" }} />,
     },
     {
       name: "Français",
       content: "Lorem ipsum dolor sit amet consectetur.",
-      svg: "",
+      svg: <GiPublicSpeaker style={{ fontSize: "20px" }} />,
     },
     {
       name: "Géographie",
       content: "Lorem ipsum dolor sit amet consectetur.",
-      svg: "",
+      svg: <IoEarthOutline style={{ fontSize: "20px" }} />,
     },
     {
       name: "Histoire",
       content: "Lorem ipsum dolor sit amet consectetur.",
-      svg: "",
+      svg: <LuBookMarked style={{ fontSize: "20px" }} />,
     },
     {
       name: "Option",
       content: "Lorem ipsum dolor sit amet consectetur.",
-      svg: "",
+      svg: <PiStudent style={{ fontSize: "20px" }} />,
     },
   ];
 
@@ -82,22 +88,7 @@ const Lessons = () => {
                 className="block rounded-xl hover:bg-white bg-gray-50 border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
               >
                 <span className="inline-block rounded-lg bg-gray-50 p-3">
-                  <svg
-                    class="h-6 w-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-                    <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                    ></path>
-                  </svg>
+                  {lesson.svg}
                 </span>
 
                 <h2 className="mt-2 font-bold">{lesson.name}</h2>

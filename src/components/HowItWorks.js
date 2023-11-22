@@ -8,7 +8,7 @@ const HowItWorks = () => {
       <div className="gap-16 items-center py-8 md:px-0 px-4 mx-auto container lg:grid lg:grid-cols-2 py-16 ">
         <div className="font-light text-gray-500 sm:text-lg space-y-4">
           <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
-            Notre méthode d'apprentissage
+            Réussissez brillamment votre jury central
           </h2>
           <p className="mb-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero

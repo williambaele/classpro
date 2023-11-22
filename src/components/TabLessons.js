@@ -14,42 +14,42 @@ const TabLessons = () => {
       content:
         "Quisque bibendum elit malesuada risus pulvinar, non scelerisque ligula viverra. Suspendisse sit amet tellus eget urna placerat porta. Nam accumsan, dui sit amet mollis egestas, est sapien pretium nulla, vitae eleifend elit lectus at est. Quisque nec efficitur odio. Pellentesque et nunc ut dolor mollis sodales sed ut metus. Etiam convallis elementum diam quis imperdiet. Maecenas tincidunt sem quis neque gravida blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.",
       chapters: ["Chapitre 1", "Chapitre 2", "Chapitre 3", "Chapitre 4"],
-      svg: <BiMath />,
+      svg: <BiMath style={{ fontSize: "20px" }} />,
     },
     {
       name: "Sciences",
       content:
         "Quisque bibendum elit malesuada risus pulvinar, non scelerisque ligula viverra. Suspendisse sit amet tellus eget urna placerat porta. Nam accumsan, dui sit amet mollis egestas, est sapien pretium nulla, vitae eleifend elit lectus at est. Quisque nec efficitur odio. Pellentesque et nunc ut dolor mollis sodales sed ut metus. Etiam convallis elementum diam quis imperdiet. Maecenas tincidunt sem quis neque gravida blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.",
       chapters: ["Chapitre 1", "Chapitre 2", "Chapitre 3", "Chapitre 4"],
-      svg: <GiMaterialsScience />,
+      svg: <GiMaterialsScience style={{ fontSize: "20px" }} />,
     },
     {
       name: "Histoire",
       content:
         "Quisque bibendum elit malesuada risus pulvinar, non scelerisque ligula viverra. Suspendisse sit amet tellus eget urna placerat porta. Nam accumsan, dui sit amet mollis egestas, est sapien pretium nulla, vitae eleifend elit lectus at est. Quisque nec efficitur odio. Pellentesque et nunc ut dolor mollis sodales sed ut metus. Etiam convallis elementum diam quis imperdiet. Maecenas tincidunt sem quis neque gravida blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.",
       chapters: ["Chapitre 1", "Chapitre 2", "Chapitre 3", "Chapitre 4"],
-      svg: <LuBookMarked />,
+      svg: <LuBookMarked style={{ fontSize: "20px" }} />,
     },
     {
       name: "Géographie",
       content:
         "Quisque bibendum elit malesuada risus pulvinar, non scelerisque ligula viverra. Suspendisse sit amet tellus eget urna placerat porta. Nam accumsan, dui sit amet mollis egestas, est sapien pretium nulla, vitae eleifend elit lectus at est. Quisque nec efficitur odio. Pellentesque et nunc ut dolor mollis sodales sed ut metus. Etiam convallis elementum diam quis imperdiet. Maecenas tincidunt sem quis neque gravida blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.",
       chapters: ["Chapitre 1", "Chapitre 2", "Chapitre 3", "Chapitre 4"],
-      svg: <IoEarthOutline />,
+      svg: <IoEarthOutline style={{ fontSize: "20px" }} />,
     },
     {
       name: "Français",
       content:
         "Quisque bibendum elit malesuada risus pulvinar, non scelerisque ligula viverra. Suspendisse sit amet tellus eget urna placerat porta. Nam accumsan, dui sit amet mollis egestas, est sapien pretium nulla, vitae eleifend elit lectus at est. Quisque nec efficitur odio. Pellentesque et nunc ut dolor mollis sodales sed ut metus. Etiam convallis elementum diam quis imperdiet. Maecenas tincidunt sem quis neque gravida blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.",
       chapters: ["Chapitre 1", "Chapitre 2", "Chapitre 3", "Chapitre 4"],
-      svg: <GiPublicSpeaker />,
+      svg: <GiPublicSpeaker style={{ fontSize: "20px" }} />,
     },
     {
       name: "Option",
       content:
         "Quisque bibendum elit malesuada risus pulvinar, non scelerisque ligula viverra. Suspendisse sit amet tellus eget urna placerat porta. Nam accumsan, dui sit amet mollis egestas, est sapien pretium nulla, vitae eleifend elit lectus at est. Quisque nec efficitur odio. Pellentesque et nunc ut dolor mollis sodales sed ut metus. Etiam convallis elementum diam quis imperdiet. Maecenas tincidunt sem quis neque gravida blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur.",
       chapters: ["Chapitre 1", "Chapitre 2", "Chapitre 3", "Chapitre 4"],
-      svg: <PiStudent style={{ fontSize: "24px" }} />,
+      svg: <PiStudent style={{ fontSize: "20px" }} />,
     },
   ];
 
