@@ -15,3 +15,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@font-face {
+  font-family: "Satoshi";
+  src: url(../fonts/Satoshi-Bold.otf);
+}
+
+.font-Alpino {
+  font-family: "Satoshi", sans-serif;
+}
+
+@font-face {
+  font-family: "Ranade";
+  src: url(../fonts/Ranade-Regular.otf);
+}
+a,
+p,
+button,
+span,
+li,
+ul,
+input,
+nav {
+  font-family: "Ranade", sans-serif;
+}
+
+.font-Alpino {
+  font-family: "Satoshi", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Satoshi;
+}
